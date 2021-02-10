@@ -1,0 +1,31 @@
+<div>
+  <button
+    mat-raised-button
+    color="primary"
+    style="width: 15%"
+    (click)="increment()"
+  >
+    Increment
+  </button>
+</div>
+<hr />
+<div>
+  <button
+    mat-raised-button
+    color="accent"
+    style="width: 15%"
+    (click)="decrement()"
+  >
+    Decrement
+  </button>
+</div>
+<hr />
+<div>
+  <button mat-raised-button color="warn" style="width: 15%" (click)="reset()">
+    Reset
+  </button>
+</div>
+<hr />
+<div>
+  <h2>Current count: {{ count$ | async }}</h2>
+</div>
